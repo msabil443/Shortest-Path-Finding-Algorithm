@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import "./Node.css";
+import "./Node/Node.css";
 
 export default class Node extends Component {
   render() {
@@ -9,8 +9,8 @@ export default class Node extends Component {
       isFinish,
       isStart,
       isWall,
-      onMouseDown,
       onMouseEnter,
+      onMouseDown,
       onMouseUp,
       row,
     } = this.props;
@@ -21,15 +21,14 @@ export default class Node extends Component {
       : isWall
       ? "node-wall"
       : "";
-
     return (
-      <div
-        id={`node-${row}-${col}`}
-        className={`node ${extraClassName}`}
+      <div>
+        id = {`node-${row}-${col}`}
+        className = {`node ${extraClassName}`}
         onMouseDown={() => onMouseDown(row, col)}
         onMouseEnter={() => onMouseEnter(row, col)}
         onMouseUp={() => onMouseUp()}
-      ></div>
+      </div>
     );
   }
 }
