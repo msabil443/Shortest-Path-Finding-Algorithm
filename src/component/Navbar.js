@@ -17,8 +17,8 @@ const Navbar = () => {
         {/* 1st logo part  */}
         <div className="logo">
           <h2>
-            <span>A</span>lgorithm
-            <span>V</span>isualization
+            <span>A</span>lgo
+            <span>V</span>isual
           </h2>
         </div>
 
@@ -29,7 +29,7 @@ const Navbar = () => {
           }>
           <ul>
             <li>
-              {/* <NavLink to="/">Home</NavLink> */}
+              {/* <NavLink to="/home" >Dijkstra</NavLink> */}
               {/* use navlink to move to this directory */}
             </li>
             <li>
@@ -70,7 +70,7 @@ const Navbar = () => {
             </li>
           </ul>
 
-          {/* hamburget menu start  */}
+          {/* hamburger menu start  */}
           <div className="hamburger-menu">
             <a href="#" onClick={() => setShowMediaIcons(!showMediaIcons)}>
               <GiHamburgerMenu />
@@ -82,7 +82,7 @@ const Navbar = () => {
       {/* hero section  */}
       {/* <section className="hero-section">
         <p>Welcome to </p>
-        <h1>Thapa Technical</h1>
+        <h1>Mohammed Sabil</h1>
       </section> */}
     </>
   );
